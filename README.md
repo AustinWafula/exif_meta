@@ -1,4 +1,4 @@
 # exif_meta
-image file metadata extractor
-Extracts metadata from multiple files
+Image files metadata extractor
+Extracts metadata from multiple files.
 Helpful for forensic practises on image files 
