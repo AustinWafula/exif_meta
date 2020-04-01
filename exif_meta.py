@@ -3,10 +3,10 @@ from PIL.ExifTags import TAGS
 import os
 
 path=input("Drive/Directory path:")
-k=('tiff','jpg','png','gif','jpe','jpeg','jif','jfi','jfif','webp','tif','raw','arw','cr2','nrw','k25')#image file extensions
+k=('tiff','jpg','png','gif','jpe','jpeg','jif','jfi','jfif','webp','tif','raw','arw','cr2','nrw','k25') '''image file extensions'''
 def get_meta():
+    os.chdir(path)
     for root, dirs, files in os.walk(path):
-        
         for file in files:
             for r in k:
                 if file.endswith(r):
