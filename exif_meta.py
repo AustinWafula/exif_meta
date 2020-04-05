@@ -25,6 +25,6 @@ def get_meta():
                             print('============================')
                             print(str(d),str(exif))
                             print('')
-                    except (FileNotFoundError,AttributeError):
+                    except Exception:
                         pass
 get_meta()
