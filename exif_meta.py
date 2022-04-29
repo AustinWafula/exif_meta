@@ -2,9 +2,8 @@ from PIL import Image
 from PIL.ExifTags import TAGS
 import os
 import sys
-k=('tiff','jpg','png','gif','jpe','jpeg','jif','jfi','jfif','webp','tif','raw','arw','cr2','nrw','k25') '''image file extensions'''
 def get_meta():
-    os.chdir(path)
+    os.chdir(sys.argv[1])
     for root, dirs, files in os.walk(sys.argv[1]):
         for file in files:
             for r in k:
